@@ -1,0 +1,31 @@
+{
+  "name": "hourtel_client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "google-maps-react": "^2.0.2",
+    "react": "^16.5.2",
+    "react-calendar": "^2.17.4",
+    "react-dom": "^16.5.2",
+    "react-google-maps": "^9.4.5",
+    "react-google-maps-loader": "^4.2.3",
+    "react-image-gallery": "^0.8.12",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.1",
+    "redux-saga": "^0.16.2",
+    "superagent": "^3.8.3",
+    "universal-cookie": "^3.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0"
+  }
+}
