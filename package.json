@@ -1,0 +1,38 @@
+{
+  "name": "hourtel_client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.1",
+    "css-loader": "^1.0.0",
+    "google-maps-react": "^2.0.2",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "react": "^16.5.2",
+    "react-calendar": "^2.17.4",
+    "react-dom": "^16.5.2",
+    "react-image-gallery": "^0.8.12",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5",
+    "redux": "^4.0.1",
+    "style-loader": "^0.23.1",
+    "superagent": "^4.0.0-beta.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

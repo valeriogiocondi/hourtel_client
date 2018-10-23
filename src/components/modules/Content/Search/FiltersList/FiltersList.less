@@ -1,0 +1,77 @@
+@import '../../../../../assets/style/reset.less';
+
+#filters-list {
+	width: 370px;
+	padding: 0px 	15px;
+	text-align: left;
+}
+#filters-list h1 {
+	color: #13256E;
+	font-size: 14px;
+	font-weight: 400;
+}
+#filters-list > *:last-child {
+	margin-bottom: 20px;
+} 
+#filters-list .checkbox {
+	margin-top: 20px;
+}
+#filters-list .mini-select {
+	position: relative;
+	width: 100px;
+	padding: 4px 0px 4px 5px;
+	margin-right: 19px;
+  background: url("../../../../../assets/style/images/select-arrow.png") no-repeat right;
+	border: solid 1px #CCC;
+	overflow: hidden;
+	cursor: pointer;
+}	
+#filters-list .mini-select.price-min, 
+#filters-list .mini-select.price-max {
+	position: relative;
+	width: 165px;
+	margin-top: 30px;
+}
+#filters-list .mini-select.price-min .label, 
+#filters-list .mini-select.price-max .label 
+{
+	width: 90px;
+}
+#filters-list .mini-select select {
+	position: absolute;
+	top: 0px;
+	right: -15px;
+	width: 60px;
+	margin-top: 5px;
+	border: 0px; 
+	background: transparent;
+	vertical-align: top;
+	cursor: pointer;
+}	
+#filters-list .price-min select, 
+#filters-list .price-max select 
+{
+	width: 90px;
+}	
+#filters-list .checkbox {
+}
+#filters-list .checkbox .input {
+	width: 15px;
+	height: 15px;
+	border: solid 1px #CCC;
+	vertical-align: top;
+}
+#filters-list .checkbox .input input {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border: 0px;
+}
+#filters-list .checkbox .label {
+	margin-left: 2px;
+}
+#filters-list .type-structure,
+#filters-list .room-services,
+#filters-list .hotel-services {
+	margin: 50px 0px 0px 0px;
+}

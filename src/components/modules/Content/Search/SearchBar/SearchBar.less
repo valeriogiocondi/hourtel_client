@@ -1,0 +1,256 @@
+@import '../../../../../assets/style/reset.less';
+
+.search-bar {
+	background-color: red;
+}
+.search-bar .booking-popup > * {
+	position: absolute;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: -380px;
+}
+.search-bar .booking-popup > * .container {
+	width: 320px;
+	height: 310px;
+	padding: 25px 25px 25px 25px;
+	background-color: #FFF;
+	border: solid 1px #CCC;
+	text-align: center;
+	overflow: hidden;
+}
+.search-bar .booking-popup .triangle {
+  width: 0; 
+  height: 0; 
+  margin-top: -3px;
+  margin-left: 10px;
+  border-left: 15px solid #FFF;
+  border-right: 15px solid #FFF;
+  border-top: 15px solid #CCC;
+  display: none;
+}
+.search-bar .calendar {
+	margin-top: 70px;
+	margin-left: 10px;
+	z-index: 100;
+}
+.search-bar .booking-popup .calendar#check-out-calendar {
+	margin-left: 235px;
+}
+.search-bar .calendar header {
+	width: 300px;
+	margin: 0px auto;
+	margin-bottom: 10px;
+}
+.search-bar .calendar header h1 {
+	width: auto;
+	color: #19417D;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline;
+}
+.search-bar .calendar header i {
+	margin-top: 5px;
+	cursor: pointer;
+}
+.search-bar .calendar header i:hover {
+}
+.search-bar .calendar header ul {
+	margin-top: 20px;
+}
+.search-bar .calendar header ul li {
+	width: 40px;
+	font-size: 10px;
+	text-transform: uppercase;
+	display: inline-block;
+	list-style: none;
+}
+.search-bar .calendar section {
+	width: 300px;
+	margin: 0px auto;
+}
+.search-bar .calendar .day {
+	width: 20px;
+	height: 20px;
+	padding: 12px 10px 10px 10px;
+	font-size: 14px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	cursor: pointer;
+
+	transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+	-webkit-transition: background-color 0.3s linear;
+}
+.search-bar .calendar .day:not(.not-available):hover {
+	background-color: #0078FF33;
+}
+.search-bar .calendar .day.selected,
+.search-bar .calendar .day.selected:hover 
+{
+	font-weight: bold;
+	color: #FFF;
+	background-color: #13256E;
+}
+.search-bar .calendar .day.not-available {
+	color: #DDD;
+	cursor: default;
+}
+.search-bar .calendar .day:last-child {
+	/*border-right: solid 1px #CCC;*/
+}
+.search-bar .calendar .row:last-child .day {
+	/*border-bottom: solid 1px #CCC;*/
+}
+
+/* 
+*		booking popup people 
+*/
+
+.search-bar .booking-popup .people {
+	margin-top: -170px;
+	margin-left: 595px;
+}
+.search-bar .booking-popup .people .container {
+	width: 240px;
+	height: 100px;
+	color: #333;
+	font-size: 16px;
+	text-align: left;
+}
+.search-bar .booking-popup .people .row {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.search-bar .booking-popup .people .label {
+	width: 130px;
+	padding-top: 5px;
+	color: #13256E;
+	font-size: 14px;
+	font-weight: 600;
+}
+.search-bar .booking-popup .people .number
+{
+	padding: 0px 10px;
+	margin-top: 2px;
+	vertical-align: top;
+	display: inline-block;
+}
+.search-bar .booking-popup .people .plus,
+.search-bar .booking-popup .people .minus
+{
+	padding: 6px;
+	font-size: 15px;
+	color: #13256E;
+	font-weight: 700;
+	border: solid 1px #DDD;
+	cursor: pointer;
+
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-khtml-border-radius: 50%;
+}
+
+/* 
+* 	booking bar 
+*/
+
+
+.search-bar > .bar {
+	height: 60px;
+	background-color: #FFF;
+	border-bottom: solid 1px #CCC;
+	overflow: hidden;
+}
+.search-bar > .bar .field {
+	height: 40px;
+	padding: 10px 15px;
+	border-right: solid 1px #DDD; 
+	text-align: left;
+	cursor: pointer;
+}
+.search-bar > .bar .field:last-child {
+	border-right: solid 1px #DDD; 
+}
+.search-bar > .bar .field * {
+	cursor: pointer;
+}
+
+.search-bar > .bar .field .label {
+	color: #AAA;
+	font-size: 10px;
+}
+.search-bar > .bar .field input {
+	width: calc(100% - 20px);
+	padding: 0px;
+	margin-top: 5px;
+	color: #13256E;
+	font-size: 14px;
+	font-weight: 600;
+	border: none;
+}
+.search-bar > .bar .field.date-check-in input, 
+.search-bar > .bar .field.date-check-out input {
+	width: 180px;
+	margin-right: 10px;
+}
+.search-bar > .bar .field > i {
+	padding: 0px;
+}
+.search-bar > .bar .field.rooms .label {
+	width: 50px;
+}
+.search-bar > .bar .field.rooms .tools {
+	margin-top: 7px;
+}
+.search-bar > .bar .field .num-room {
+	width: 80px;
+	height: 20px;
+	margin-top: 4px;
+	color: #13256E;
+	font-size: 14px;
+	font-weight: 600;
+}
+.search-bar > .bar .field.rooms .tools button {
+	width: 15px;
+	padding: 0px;
+	color: #13256E;
+	background-color: transparent;
+	border: none;
+	font-size: 0px;
+	display: block;
+}
+.search-bar > .bar .field.rooms .tools button i {
+	padding: 0px;
+	color: #CCC;
+	font-size: 16px;
+	font-weight: bold;
+}
+.search-bar > .bar .field.rooms .tools button:hover i {
+	color: #13256E;
+}
+.search-bar > .bar .field.num-people {
+	width: 100px;
+}
+.search-bar #check-availability {
+	padding: 21px 18px;
+	margin-right: 1px;
+
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-khtml-border-radius: 0px;
+}
+
+
+.search-bar #search-by-bar {
+	padding: 21px 30px;
+	background-color: #2257A7;
+	font-size: 14px;
+}
+.search-bar #search-by-bar:hover {
+	color: #FFF;
+	background-color: #13256E;
+}

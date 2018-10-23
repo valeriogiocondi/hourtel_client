@@ -1,0 +1,477 @@
+@import '../../../../assets/style/reset.less';
+
+#home {
+	width: 100%;
+	padding: 0px 0px 0px 0px !important;
+}
+#home .coming-soon {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 300px;
+	margin: auto;
+	color: #FFF;
+	text-align: center;
+	z-index: 2;
+}
+#home .coming-soon .content {
+	margin: auto;
+}
+#home .coming-soon .content div:nth-child(2) {
+	font-size: 22px;
+	font-weight: bold;
+}
+#home .coming-soon #find-hotel-rome {
+	padding: 15px 17px;
+	margin-top: 20px;
+}
+#home .landing-page {
+	width: 100%;
+	background-image: url('../../../../assets/images/home/firenze.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+#home .landing-page .overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 1;
+}
+
+#home .list-cities {
+	padding: 150px 0px;
+}
+#home .list-cities .content {
+}
+#home .list-cities .content > header h1 {
+	color: #333;
+	font-size: 40px;
+	font-weight: 300;
+}
+#home .list-cities .content > section {
+	margin-top: 100px;
+	/*padding: 100px 0px;*/
+
+	/*border: solid 1px #000;*/
+}
+#home .list-cities .content > section .city {
+	/*background-color: #DDD;*/
+	overflow: hidden;
+}
+#home .list-cities .content > section .city .image {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+}
+#home .list-cities .content > section .city:hover .image {
+	width: calc(100% + 60px);
+	height: calc(100% + 60px);
+	margin: -30px 0px 0px -30px;
+}
+#home .list-cities .content > section .city.firenze .image {
+	background-image: url('../../../../assets/images/home/firenze.jpg');
+}
+#home .list-cities .content > section .city.milano .image {
+	background-image: url('../../../../assets/images/home/milano.png');
+}
+#home .list-cities .content > section .city.venezia .image {
+	background-image: url('../../../../assets/images/home/venezia.jpg');
+}
+
+@media only screen and (min-width :1224px) {
+
+	#home .landing-page {
+		height: 750px;
+		background-image: url('../../../../assets/images/slider/large/image-1.jpg');
+	}
+	#home .coming-soon .content {
+		width: 400px;
+		margin-top: 100px !important;
+		font-size: 25px;
+	}
+	#home .list-cities .content > section .city.firenze {
+		width: 700px;
+		height: 520px;
+	}
+	#home .list-cities .content > section .city.milano {
+		width: 400px;
+		height: 225px;
+	}
+	#home .list-cities .content > section .city.venezia {
+		width: 400px;
+		height: 225px;
+		margin-top: 70px;
+	}
+
+	#home .slider .image .search-by-city {
+		margin: 250px 0px 0px 0px;
+	}
+	#home .slider .image .search-by-city > .wrapper > header h1 {
+		margin: 0px 0px 20px 0px;
+		font-size: 30px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text {
+		width: 445px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .links {
+		width: 445px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text input[type="text"] {
+		width: 425px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip {
+		width: 460px;
+		height: 240px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip .content {
+		width: 444px;
+		margin: 0px 0px 0px 7px;		
+	}
+	#home .hotels-list {
+		margin: 100px 0px 100px 0px;
+	}
+	#home .hotels-list .hotel {
+		width: 330px;
+		height: 270px;
+		margin: 0px 90px 60px 0px;
+	}
+	#home .hotels-list .hotel:nth-child(3n) {
+		margin: 0px 0px 60px 0px;
+	}
+	#home .hotels-list .hotel section .image {
+		width: 330px;
+		height: 220px;
+	}
+}
+
+@media only screen and (min-width :1024px) and (max-width : 1224px) {
+
+	#home .landing-page {
+		height: 650px;
+		background-image: url('../../../../assets/images/slider/large/image-1.jpg');
+	}
+	#home .coming-soon .content {
+		width: 400px;
+		margin-top: 100px !important;
+		font-size: 25px;
+	}
+	#home .list-cities .content > section .city.firenze {
+		width: 640px;
+		height: 480px;
+	}
+	#home .list-cities .content > section .city.milano {
+		width: 300px;
+		height: 215px;
+	}
+	#home .list-cities .content > section .city.venezia {
+		width: 300px;
+		height: 215px;
+		margin-top: 50px;
+	}
+
+	#home .slider .image .search-by-city {
+		margin: 250px 0px 0px 0px;
+	}
+	#home .slider .image .search-by-city > .wrapper > header h1 {
+		margin: 0px 0px 20px 0px;
+		font-size: 30px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text {
+		width: 445px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .links {
+		width: 445px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text input[type="text"] {
+		width: 425px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip {
+		width: 460px;
+		height: 240px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip .content {
+		width: 444px;
+		margin: 0px 0px 0px 7px;		
+	}
+	#home .hotels-list {
+		margin: 100px 0px 50px 0px;
+	}
+	#home .hotels-list .hotel {
+		width: 270px;
+		height: 220px;
+		margin: 0px 80px 60px 0px;
+	}
+	#home .hotels-list .hotel:nth-child(3n) {
+		margin: 0px 0px 60px 0px;
+	}
+	#home .hotels-list .hotel section .image {
+		width: 270px;
+		height: 170px;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+	#home .landing-page {
+		height: 650px;
+		background-image: url('../../../../assets/images/slider/large/image-1.jpg');
+	}
+	#home .coming-soon .content {
+		width: 400px;
+		margin-top: 100px !important;
+		font-size: 25px;
+	}
+	#home .list-cities .content > section .city.firenze {
+		width: 720px;
+		height: 480px;
+		margin-bottom: 50px;
+	}
+	#home .list-cities .content > section .city.milano {
+		width: 335px;
+		height: 215px;
+	}
+	#home .list-cities .content > section .city.venezia {
+		width: 335px;
+		height: 215px;
+		margin-right: 50px;
+	}
+	#home .slider .image .search-by-city {
+		margin: 250px 0px 0px 0px;
+	}
+	#home .slider .image .search-by-city > .wrapper > header h1 {
+		margin: 0px 0px 20px 0px;
+		font-size: 30px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text {
+		width: 445px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .links {
+		width: 445px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text input[type="text"] {
+		width: 425px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip {
+		width: 460px;
+		height: 240px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip .content {
+		width: 444px;
+		margin: 0px 0px 0px 7px;		
+	}
+	#home .hotels-list {
+		margin: 100px 0px 50px 0px;
+	}
+	#home .hotels-list .hotel {
+		width: 200px;
+		height: 180px;
+		margin: 0px 55px 60px 0px;
+	}
+	#home .hotels-list .hotel:nth-child(3n) {
+		margin: 0px 0px 60px 0px;
+	}
+	#home .hotels-list .hotel section .image {
+		width: 200px;
+		height: 130px;
+	}
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+	
+	#home .landing-page {
+		height: 650px;
+		background-image: url('../../../../assets/images/slider/large/image-1.jpg');
+	}
+	#home .coming-soon .content {
+		width: 400px;
+		margin-top: 100px !important;
+		font-size: 25px;
+	}
+	#home .list-cities .content > section .city.firenze {
+		width: 450px;
+		height: 330px;
+		margin-bottom: 80px;
+	}
+	#home .list-cities .content > section .city.milano {
+		width: 450px;
+		height: 330px;
+		margin-bottom: 80px;
+	}
+	#home .list-cities .content > section .city.venezia {
+		width: 450px;
+		height: 330px;
+	}
+	#home .slider .image .search-by-city {
+		margin: 200px 0px 0px 0px;
+	}
+	#home .slider .image .search-by-city > .wrapper > header h1 {
+		margin: 0px 0px 20px 0px;
+		font-size: 30px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text {
+		width: 445px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .links {
+		width: 445px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text input[type="text"] {
+		width: 425px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip {
+		width: 460px;
+		height: 240px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip .content {
+		width: 444px;
+		margin: 0px 0px 0px 7px;		
+	}
+	#home .hotels-list {
+		margin: 70px 0px 20px 0px;
+	}
+	#home .hotels-list .hotel {
+		width: 280px;
+		height: 260px;
+		margin: 0px 0px 60px 0px;
+	}
+	#home .hotels-list .hotel section .image {
+		width: 280px;
+		height: 200px;
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+	#home .landing-page {
+		height: 500px;
+		background-image: url('../../../../assets/images/slider/small/image-1.jpg');
+	}
+	#home .coming-soon .content {
+		width: 300px;
+		margin-top: 50px !important;
+		font-size: 25px;
+	}
+	#home .list-cities .content > section .city.firenze {
+		width: 280px;
+		height: 280px;
+		margin-bottom: 80px;
+	}
+	#home .list-cities .content > section .city.milano {
+		width: 280px;
+		height: 280px;
+		margin-bottom: 80px;
+	}
+	#home .list-cities .content > section .city.venezia {
+		width: 280px;
+		height: 280px;
+	}
+	#home .slider .image .search-by-city {
+		margin: 150px 0px 0px 0px;
+	}
+	#home .slider .image .search-by-city > .wrapper > header h1 {
+		margin: 0px 0px 5px 0px;
+		font-size: 18px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text {
+		width: 260px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .links {
+		width: 260px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text input[type="text"] {
+		width: 240px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip {
+		width: 270px;
+		height: 240px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip .content {
+		width: 260px;
+		margin: 0px 0px 0px 5px;
+	}
+	#home .hotels-list {
+		margin: 70px 0px 20px 0px;
+	}
+	#home .hotels-list .hotel {
+		width: 280px;
+		height: 260px;
+		margin: 0px 0px 60px 0px;
+	}
+	#home .hotels-list .hotel section .image {
+		width: 280px;
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+
+	#home .landing-page {
+		height: 500px;
+		background-image: url('../../../../assets/images/slider/small/image-1.jpg');
+	}
+	#home .coming-soon .content {
+		width: 300px;
+		margin-top: 50px !important;
+		font-size: 25px;
+	}
+	#home .list-cities .content > section .city.firenze {
+		width: 280px;
+		height: 280px;
+		margin-bottom: 80px;
+	}
+	#home .list-cities .content > section .city.milano {
+		width: 280px;
+		height: 280px;
+		margin-bottom: 80px;
+	}
+	#home .list-cities .content > section .city.venezia {
+		width: 280px;
+		height: 280px;
+	}
+	#home .slider .image .search-by-city {
+		margin: 150px 0px 0px 0px;
+	}
+	#home .slider .image .search-by-city > .wrapper > header h1 {
+		margin: 0px 0px 5px 0px;
+		font-size: 18px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text {
+		width: 260px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .links {
+		width: 260px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .input-text input[type="text"] {
+		width: 240px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip {
+		width: 270px;
+		height: 240px;
+	}
+	#home .slider .image .search-by-city > .wrapper > section .tooltip .content {
+		width: 260px;
+		margin: 0px 0px 0px 5px;
+	}
+	#home .hotels-list {
+		margin: 70px 0px 20px 0px;
+	}
+	#home .hotels-list .hotel {
+		width: 270px;
+		height: 260px;
+		margin: 0px 0px 60px 0px;
+	}
+	#home .hotels-list .hotel section .image {
+		width: 270px;
+		height: 200px;
+	}
+}

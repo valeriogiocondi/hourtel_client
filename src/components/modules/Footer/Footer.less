@@ -1,0 +1,303 @@
+@import '../../../assets/style/reset.less';
+
+#main-footer {
+	color: #FFF;
+	font-size: 13px;
+}
+#main-footer .cities-list {
+	font-size: 0;
+}
+#main-footer .cities-list .city {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-size: cover;
+}
+#main-footer .cities-list .city.roma {
+	background-image:url('http://hourtel.it/images/cities-footer/thumb/roma.jpg');
+}
+#main-footer .cities-list .city.firenze {
+	background-image:url('http://hourtel.it/images/cities-footer/thumb/firenze.jpg');
+}
+#main-footer .cities-list .city.torino {
+	background-image:url('http://hourtel.it/images/cities-footer/thumb/torino.jpg');
+}
+#main-footer .cities-list .city.milano {
+	background-image:url('http://hourtel.it/images/cities-footer/thumb/milano.jpg');
+}
+#main-footer .cities-list .city a {
+	width: 100%;
+	height: 100%;
+}
+#main-footer .cities-list .city:hover header {
+	opacity: 0;
+}
+#main-footer .cities-list .city header {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 2;
+
+	transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	-webkit-transition: opacity 0.3s linear;
+}
+#main-footer .cities-list .city header h1 {
+	font-size: 25px;
+	font-weight: 600;
+	color: #FFF;
+}
+#main-footer .cities-list .city section {
+	width: 100%;
+	height: 100%;
+}
+#main-footer .footer-menu {
+	padding: 70px 0px;
+	margin: 0px;
+	color: #FFF;
+	background-color: #223759;
+}
+#main-footer .footer-menu .left ul li a {
+	color: #AAB2BF;
+	font-size: 14px;
+
+	transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+}
+#main-footer .footer-menu .left ul li:hover a {
+	color: #FFF;
+	text-decoration: none;
+}
+#main-footer .footer-menu .left, 
+#main-footer .footer-menu .right:not(.social) 
+{
+}
+#main-footer .footer-menu ul li {
+	margin: 0px 0px 5px 0px;
+}
+#main-footer .footer-menu .social ul li *, 
+#main-footer .footer-menu .contacts ul li * 
+{
+	margin: 0px 4px 2px 0px;
+	font-weight: 300;
+	vertical-align: middle;
+}
+#main-footer .footer-menu .social ul li img, 
+#main-footer .footer-menu .contacts ul li img 
+{
+	width: 15px;
+	height: 15px;
+}
+#main-footer .footer-bottom {
+	padding: 20px 0px;
+	background-color: #1F3454;
+	border-top: solid 1px #3D4A5F;
+} 
+#main-footer .footer-bottom .copyright span:nth-child(2) {
+	margin: 0px 5px 0px 2px;
+} 
+
+
+@media only screen and (min-width :1224px) {
+
+	#main-footer .cities-list .owl-controls {
+		margin: -90px 0px 0px 0px;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:first-child {
+		margin: 0px 560px 0px 0px;
+		color: #FFF;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:last-child {
+		margin: 0px 0px 0px 560px;
+		color: #FFF;
+	}
+	#main-footer .cities-list .city {
+		width: 25%;
+		height: 250px;
+	}
+	#main-footer .cities-list .city header h1 {
+		padding: 110px 0px 0px 0px;
+	}
+	#main-footer > footer .footer-menu > .left {
+		margin: 0px 30px 0px 0px;
+	}
+	#main-footer > footer .footer-menu > .right {
+		margin: 0px 0px 0px 30px;
+	}
+}
+
+@media only screen and (min-width :1024px) and (max-width : 1224px) {
+
+	#main-footer .cities-list .owl-controls {
+		margin: -88px 0px 0px 0px;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:first-child {
+		margin: 0px 460px 0px 0px;
+		color: #FFF;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:last-child {
+		margin: 0px 0px 0px 460px;
+		color: #FFF;
+	}
+	#main-footer .cities-list .city {
+		width: 25%;
+		height: 250px;
+	}
+	#main-footer .cities-list .city header h1 {
+		padding: 110px 0px 0px 0px;
+	}
+	#main-footer > footer .footer-menu > .left {
+		margin: 0px 30px 0px 0px;
+	}
+	#main-footer > footer .footer-menu > .right {
+		margin: 0px 0px 0px 30px;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+	#main-footer .cities-list .owl-controls {
+		margin: -87px 0px 0px 0px;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:first-child {
+		margin: 0px 330px 0px 0px;
+		color: #FFF;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:last-child {
+		margin: 0px 0px 0px 330px;
+		color: #FFF;
+	}
+	#main-footer .cities-list .city {
+		width: 33.3%;
+		height: 250px;
+	}
+	#main-footer .cities-list .city:nth-child(4) {
+		display: none;
+	}
+	#main-footer .cities-list .city header h1 {
+		padding: 110px 0px 0px 0px;
+	}
+	#main-footer > footer .footer-menu > .left {
+		margin: 0px 30px 0px 0px;
+	}
+	#main-footer > footer .footer-menu > .right {
+		margin: 0px 0px 0px 30px;
+	}
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+
+	#main-footer .cities-list .owl-controls {
+		margin: -105px 0px 0px 0px;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:first-child {
+		margin: 0px 160px 0px 0px;
+		color: #13256E;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:last-child {
+		margin: 0px 0px 0px 160px;
+		color: #13256E;
+	}
+	#main-footer .cities-list .city {
+		width: 50%;
+		height: 250px;
+	}
+	#main-footer .cities-list .city:nth-child(3), 
+	#main-footer .cities-list .city:nth-child(4) 
+	{
+		display: none;
+	}
+	#main-footer .cities-list .city header h1 {
+		padding: 110px 0px 0px 0px;
+	}
+	#main-footer > footer .footer-menu > * {
+		width: 100%;
+		margin: 0px 0px 50px 0px;
+		text-align: center;
+	}
+	#main-footer > footer .footer-menu > .social ul {
+		width: 90px;
+		margin: 0px auto;
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+	#main-footer .cities-list .owl-controls {
+		margin: -75px 0px 0px 0px;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:first-child {
+		margin: 0px 100px 0px 0px;
+		color: #13256E;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:last-child {
+		margin: 0px 0px 0px 100px;
+		color: #13256E;
+	}
+	#main-footer .cities-list .city {
+		width: 100%;
+		height: 250px;
+	}
+	#main-footer .cities-list .city:nth-child(2), 
+	#main-footer .cities-list .city:nth-child(3), 
+	#main-footer .cities-list .city:nth-child(4) 
+	{
+		display: none;
+	}
+	#main-footer .cities-list .city header h1 {
+		padding: 110px 0px 0px 0px;
+	}
+	#main-footer > footer .footer-menu > * {
+		width: 100%;
+		margin: 0px 0px 50px 0px;
+		text-align: center;
+	}
+	#main-footer > footer .footer-menu > .social ul {
+		width: 90px;
+		margin: 0px auto;
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+
+	#main-footer .cities-list .owl-controls {
+		margin: -75px 0px 0px 0px;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:first-child {
+		margin: 0px 100px 0px 0px;
+		color: #13256E;
+	}
+	#main-footer .cities-list .owl-controls .owl-nav [class*="owl-"]:last-child {
+		margin: 0px 0px 0px 100px;
+		color: #13256E;
+	}
+	#main-footer .cities-list .city {
+		width: 100%;
+		height: 250px;
+	}
+	#main-footer .cities-list .city:nth-child(2), 
+	#main-footer .cities-list .city:nth-child(3), 
+	#main-footer .cities-list .city:nth-child(4) 
+	{
+		display: none;
+	}
+	#main-footer .cities-list .city header h1 {
+		padding: 110px 0px 0px 0px;
+	}
+	#main-footer > footer .footer-menu > * {
+		width: 100%;
+		margin: 0px 0px 50px 0px;
+		text-align: center;
+	}
+	#main-footer > footer .footer-menu > .social ul {
+		width: 90px;
+		margin: 0px auto;
+		text-align: left;
+	}
+}

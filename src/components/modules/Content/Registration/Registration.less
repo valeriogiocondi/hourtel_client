@@ -1,0 +1,219 @@
+@import '../../../../assets/style/reset.less';
+
+#registration {
+}
+#registration .content {
+	width: 400px;
+	min-height: 400px;
+	padding: 20px;
+	margin: 70px 0px 120px 0px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+#registration .registration-succeed {
+	opacity: 0;
+
+	transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	-webkit-transition: opacity 0.3s linear;
+}
+#registration .registration-succeed.opened {
+	opacity: 1;
+}
+#registration .registration-succeed h1 {
+	margin-top: 160px;
+	color: #19417D;
+	font-size: 24px;
+	font-weight: 300;
+}
+#registration .registration-succeed a {
+	margin-top: 15px;
+}
+#registration .content .field {
+	margin: 20px 0px 30px 0px;
+	border-bottom: solid 1px #19417D;
+	text-align: left;
+}
+#registration .content .field .label {
+	width: 122px;
+	padding: 12px 0px 10px 0px;
+	color: #19417D;
+	font-size: 14px;
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: top;
+}
+#registration .content .field .input-text,
+#registration .content .field .input-password {
+	width: 220px;
+	padding: 0px;
+	margin-left: 30px;
+	background-color: transparent;
+	border: 0px;
+	display: inline-block;
+	vertical-align: top;
+}
+#registration .content .field .input-text input,
+#registration .content .field .input-password input {
+	width: 100%;
+	padding: 13px 0px 0px 0px;
+	color: #19417D;
+	background-color: transparent;
+	font-size: 14px;
+	font-weight: normal;
+}
+#registration .content .email input {
+	text-transform: lowercase;
+}
+#registration .content .field .label-error {
+	display: none;
+	/*height: 0px;*/
+	margin-left: 155px;
+	margin-bottom: 5px;
+	overflow: hidden;
+	/*text-align: center;*/
+}
+#registration .content .button {
+	margin-top: 20px;
+}
+
+@media only screen and (min-width :1224px) { 
+
+	#registration {
+		background-image: url("../../../../assets/images/various/high/pexels-photo-386009.jpeg") !important;
+	}
+}
+
+@media only screen and (min-width :1024px) and (max-width : 1224px) { 
+
+	#registration {
+		background-image: url("../../../../assets/images/various/high/pexels-photo-386009.jpeg") !important;
+	}
+	#registration .content .field .label {
+		width: 130px !important;
+		font-size: 14px !important;
+		padding-left: 0px !important;
+	}
+	#registration .content .field .input-text,
+	#registration .content .field .input-password {
+		/*width: 250px !important;*/
+	}
+	#registration .content .field .input-text input,
+	#registration .content .field .input-password input {
+		font-size: 14px !important;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) { 
+
+	#registration {
+		background-image: url("../../../../assets/images/various/medium/pexels-photo-386009.jpeg") !important;
+	}
+	#registration .content .field .label {
+		width: 130px !important;
+		font-size: 14px !important;
+		padding-left: 0px !important;
+	}
+	#registration .content .field .input-text,
+	#registration .content .field .input-password {
+		/*width: 235px !important;*/
+	}
+	#registration .content .field .input-text input,
+	#registration .content .field .input-password input {
+		font-size: 14px !important;
+	}
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px) { 
+
+	#registration {
+		background-image: url("../../../../assets/images/various/medium/pexels-photo-386009.jpeg") !important;
+	}
+	#registration .content .field .label {
+		width: 130px !important;
+		font-size: 14px !important;
+		padding-left: 0px !important;
+	}
+	#registration .content .field .input-text,
+	#registration .content .field .input-password {
+		/*width: 235px !important;*/
+	}
+	#registration .content .field .input-text input,
+	#registration .content .field .input-password input {
+		font-size: 14px !important;
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) { 
+
+	#registration {
+		background-image: url("../../../../assets/images/various/mobile/pexels-photo-386009.jpeg") !important;
+	}
+	#registration .content {
+		width: 240px !important;
+	}
+	#registration .content .field {
+		width: 240px !important;
+	}
+	#registration .content .field .label {
+		width: 105px !important;
+		font-size: 12px !important;
+		padding-left: 0px !important;
+	}
+	#registration .content .field .input-text,
+	#registration .content .field .input-password {
+		width: 120px !important;
+		margin-left: 10px !important;
+	}
+	#registration .content .field .input-text input,
+	#registration .content .field .input-password input {
+		padding: 14px 0px 0px 0px;
+		font-size: 12px !important;
+	}
+	#registration .content .field .label-error {
+		margin-left: 0px !important;
+		font-size: 10px;
+	}
+	#registration .button {
+		margin-top: 0px !important;
+		font-size: 10px !important;
+		font-weight: bold !important;
+	}
+}
+
+@media only screen and (max-width : 320px) { 
+
+	#registration {
+		background-image: url("../../../../assets/images/various/mobile/pexels-photo-386009.jpeg") !important;
+	}
+	#registration .content {
+		width: 280px;
+	}
+	#registration .content .field {
+		width: 220px;
+	}
+	#registration .content .field .label {
+		width: 105px !important;
+		font-size: 12px !important;
+		padding-left: 0px !important;
+	}
+	#registration .content .field .input-text,
+	#registration .content .field .input-password {
+		width: 120px !important;
+		margin-left: 10px !important;
+	}
+	#registration .content .field .input-text input,
+	#registration .content .field .input-password input {
+		padding: 14px 0px 0px 0px;
+		font-size: 12px !important;
+	}
+	#registration .content .field .label-error {
+		margin-left: 0px !important;
+		font-size: 10px;
+	}
+	#registration .button {
+		margin-top: 0px !important;
+		font-size: 10px !important;
+		font-weight: bold !important;
+	}
+}
