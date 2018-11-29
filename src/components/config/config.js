@@ -1,7 +1,7 @@
 let Config = {
 
 	googleMaps: {
-		apiKey: 'XXX'
+		apiKey: 'XXX-XXX-XXX'
 	}
 };
 
