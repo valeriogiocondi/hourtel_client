@@ -8,7 +8,7 @@ class InfoHotel extends Component {
     return (
       <section class="responsive info-hotel">
         <aside class="left">
-          <h1>L\'HOTEL</h1>
+          <h1>L&#39;HOTEL</h1>
         </aside>
         <section class="content right">
           <div class="row">
