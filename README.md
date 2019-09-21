@@ -1,9 +1,10 @@
-# Hourtel Front-end
+# Hourtel / Front-end
 
 This is a front-end side of my personal project Hourtel: a booking engine system.
+If you want to see the [Node.js back-end] (https://github.com/valeriogiocondi/hourtel_server).
 
 
-## Technical
+## Specs
 
 I written this part in React, using Redux to implement communication between component.
 
